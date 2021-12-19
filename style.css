@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --line-dark-blue: hsl(215, 32%, 27%);
+  --card-BG-dark-blue: hsl(216, 50%, 16%);
+  --main-BG-dark-blue: hsl(217, 54%, 11%);
+  --font-family: "Outfit", sans-serif;
+  --fontsize: 15px;
+  --fontweight-equilibrium: 800;
+  --fontweight-eth: 600;
+  --fontweight: 400;
+}
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  color: var(--soft-blue);
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--main-BG-dark-blue);
+}
+.card {
+  width: 18rem;
+  box-shadow: -1px 8px 6px 10px hsl(222, 52%, 12%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: var(--card-BG-dark-blue);
+}
+.images {
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cyan);
+}
+.image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.image:hover {
+  opacity: 0.6;
+}
+.images:hover .preview {
+  cursor: pointer;
+  display: block;
+}
+.preview {
+  position: absolute;
+  display: none;
+}
+
+.heading {
+  color: var(--white);
+  font-weight: var(--fontweight-equilibrium);
+  font-size: 1rem;
+  margin: 10px 0px;
+}
+.heading:hover,
+.creater-name:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+.discription {
+  font-size: var(--fontsize);
+  margin: 10px 0px;
+}
+.detail-area {
+  display: flex;
+  justify-content: space-between;
+}
+.div-1,
+.div-2 {
+  font-size: 12px;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+}
+.eth {
+  color: var(--Cyan);
+  font-weight: var(--fontweight-eth);
+}
+.icon {
+  width: 12px;
+  margin-right: 5px;
+}
+.section-3 {
+  border-top: 1px solid var(--line-dark-blue);
+  margin: 0.7rem 0rem;
+}
+.creater-info {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.creater-name {
+  color: var(--white);
+  font-weight: var(--fontweight-eth);
+}
+.creater-img {
+  width: 1.8rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  margin-right: 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
